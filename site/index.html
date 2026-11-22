@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BiteCode: we build software, ours and yours</title>
-    <meta name="description" content="BiteCode is a small software studio. We build and run our own products, Zone, SSHoo and PlotPals, and build software for clients.">
+    <title>BiteCode: AI products, our own and yours</title>
+    <meta name="description" content="BiteCode is a small studio run by Jake Barnby. We build AI products, our own and our clients': agents, assistants, private AI and generated media.">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta property="og:title" content="BiteCode">
-    <meta property="og:description" content="We build our own software. We'll build yours too.">
+    <meta property="og:description" content="We build AI products. Our own, and yours.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bitecode.ltd/">
     <link rel="canonical" href="https://bitecode.ltd/">
@@ -30,6 +30,7 @@
           <ul>
             <li><a href="#work">Work</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#process">Process</a></li>
           </ul>
         </nav>
@@ -38,8 +39,8 @@
     </header>
     <main id="main" tabindex="-1">
       <section class="container hero">
-        <h1>We build our own software. We’ll build yours too.</h1>
-        <p class="lead">BiteCode is a small software studio. We design, build and run our own products, and take on a few client projects at a time.</p>
+        <h1>We build AI products. Our own, and yours.</h1>
+        <p class="lead">BiteCode is a small studio run by Jake Barnby. Everything we ship puts AI to work, from coding agents to generated picture books, and we take on a few client projects at a time.</p>
         <div class="actions">
           <a class="button" href="mailto:hello@bitecode.ltd?subject=New%20project">Start a project</a>
           <a class="button button-quiet" href="#work">See our work</a>
@@ -49,38 +50,38 @@
       <section class="container section" id="work" aria-labelledby="work-heading" tabindex="-1">
         <div class="section-heading">
           <h2 id="work-heading">Our work</h2>
-          <p>Three products we built and run ourselves. Each one is the kind of thing we can build for you.</p>
+          <p>Three products we build and run ourselves, each with AI at its core. The same work we’ll do for you.</p>
         </div>
         <ul class="work">
           <li class="project project-zone">
             <img class="project-icon" src="products/zone.svg" alt="" width="64" height="64">
             <h3>Zone</h3>
-            <p class="project-summary">A self-hosted AI workspace. Chat, a knowledge base and coding agents that work through a backlog, on hardware the customer owns.</p>
+            <p class="project-summary">A self-hosted AI workspace. Coding agents on Claude Code, Codex or local models work through a backlog, and every change they make is checked and recorded.</p>
             <dl class="project-facts">
-              <div><dt>Built with</dt><dd>Rust and Axum, React, Tauri for desktop and mobile, PostgreSQL</dd></div>
-              <div><dt>Runs on</dt><dd>Docker Compose or Kubernetes with Helm</dd></div>
+              <div><dt>Built with</dt><dd>Rust and Axum, React, Tauri for desktop and mobile, PostgreSQL with pgvector</dd></div>
+              <div><dt>Status</dt><dd>Open source, with paid Team and Enterprise plans</dd></div>
             </dl>
             <a class="project-link" href="https://zone.bitecode.ltd/">zone.bitecode.ltd</a>
           </li>
           <li class="project project-sshoo">
             <img class="project-icon" src="products/sshoo.svg" alt="" width="64" height="64">
             <h3>SSHoo</h3>
-            <p class="project-summary">A local-first SSH client for Android with a chat-style interface, for working on a dev box from a phone.</p>
+            <p class="project-summary">Terminals, files and AI agents for your servers, on your phone. Hand a server’s logs to Claude or Codex and fix it from anywhere.</p>
             <dl class="project-facts">
               <div><dt>Built with</dt><dd>Kotlin and Jetpack Compose</dd></div>
-              <div><dt>Runs on</dt><dd>Android, from Google Play</dd></div>
+              <div><dt>Status</dt><dd>Live on Google Play</dd></div>
             </dl>
             <a class="project-link" href="https://sshoo.app/">sshoo.app</a>
           </li>
           <li class="project project-plotpals">
             <img class="project-icon" src="products/plotpals.svg" alt="" width="64" height="64">
             <h3>PlotPals</h3>
-            <p class="project-summary">Illustrated, narrated stories made with a child, starring characters they create, and printable as a book.</p>
+            <p class="project-summary">Picture books made with a child, starring characters they create. Each page’s story, illustration and narration is generated, and the book can be printed.</p>
             <dl class="project-facts">
-              <div><dt>Built with</dt><dd>Kotlin Multiplatform, Compose, Ktor, generated art and narration</dd></div>
-              <div><dt>Runs on</dt><dd>iOS, Android and the web</dd></div>
+              <div><dt>Built with</dt><dd>Kotlin Multiplatform, Ktor, language, image and voice models</dd></div>
+              <div><dt>Status</dt><dd>In development for iOS, Android and the web</dd></div>
             </dl>
-            <span class="project-link">In development</span>
+            <span class="project-link">Coming soon</span>
           </li>
         </ul>
       </section>
@@ -88,26 +89,51 @@
       <section class="container section" id="services" aria-labelledby="services-heading" tabindex="-1">
         <div class="section-heading">
           <h2 id="services-heading">What we’ll build for you</h2>
-          <p>We take a product from first sketch to running in production, or pick up one that needs finishing.</p>
+          <p>AI that does a real job, inside software that holds up in production.</p>
         </div>
         <ul class="services">
           <li>
-            <h3>AI products and agents</h3>
-            <p>Chat, search over your own documents, and agents that do real work, running where your data already lives.</p>
+            <h3>AI in your product</h3>
+            <p>Chat, search over your own documents, summaries and data extraction, built into the app your users already have.</p>
           </li>
           <li>
-            <h3>Web apps and APIs</h3>
-            <p>Typed, tested back ends in Rust or Kotlin, and React front ends that stay fast as they grow.</p>
+            <h3>Agents that do the work</h3>
+            <p>Agents that use your tools and APIs, with approval steps, spending limits and a record of every action they take.</p>
           </li>
           <li>
-            <h3>Mobile and desktop apps</h3>
-            <p>Native Android, Kotlin Multiplatform across iOS, Android and the web, and Tauri for desktop.</p>
+            <h3>Private AI</h3>
+            <p>Local models and self-hosted set-ups for data that can’t leave your servers.</p>
           </li>
           <li>
-            <h3>Infrastructure you own</h3>
-            <p>Docker and Kubernetes set-ups you can run yourself, with metrics, logs and backups from the start.</p>
+            <h3>Generated media</h3>
+            <p>Image, voice and video pipelines, with the cost of every output measured before you scale.</p>
           </li>
         </ul>
+        <p class="services-note">Around the AI, we build the rest of the product too: web and mobile apps, APIs, databases and the infrastructure to run them.</p>
+      </section>
+
+      <section class="container section" id="about" aria-labelledby="about-heading" tabindex="-1">
+        <div class="section-heading">
+          <h2 id="about-heading">Who you’ll work with</h2>
+        </div>
+        <div class="founder">
+          <img class="founder-photo" src="jake.jpg" alt="Jake Barnby" width="400" height="400">
+          <div class="founder-body">
+            <h3>Jake Barnby</h3>
+            <p class="founder-role">Founder, based in Tauranga, New Zealand</p>
+            <p>Jake has built software for ten years. He started with mobile apps, then moved into backend infrastructure. He now leads database platform engineering at an open-source backend platform with over 58,000 GitHub stars, where he led the launch of its managed PostgreSQL and MySQL service across six cloud regions.</p>
+            <p>There’s no account manager and no hand-off to a junior team. You work with Jake directly, from the first email to production.</p>
+            <dl class="founder-facts">
+              <div><dt>Years building software</dt><dd>10</dd></div>
+              <div><dt>Merged open-source pull requests</dt><dd>2,180</dd></div>
+              <div><dt>Public repositories contributed to</dt><dd>124</dd></div>
+            </dl>
+            <ul class="founder-links">
+              <li><a href="https://github.com/abnegate">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jakebarnby/">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="container section" id="process" aria-labelledby="process-heading" tabindex="-1">
@@ -117,7 +143,7 @@
         <ol class="process">
           <li>
             <h3>Tell us what you need</h3>
-            <p>A few lines by email is enough. We reply with questions, not a sales deck.</p>
+            <p>A few lines by email is enough. Jake replies himself, with questions, not a sales deck.</p>
           </li>
           <li>
             <h3>Agree the first release</h3>
