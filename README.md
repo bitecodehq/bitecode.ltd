@@ -20,11 +20,12 @@ bunx @biomejs/biome@2.5.12 ci .
 
 ## Files
 
-- `site/index.html`: the home page and product list
+- `site/index.html`: the home page: our products, services, process and contact
 - `site/legal/index.html`: company, privacy and product terms links
 - `site/404.html`: served by Pages for unknown paths
 - `site/products/`: product icons
+- `site/logo.svg`: the BiteCode wordmark and B mark as SVG symbols, used with `<use href="logo.svg#wordmark">`
 - `site/fonts/`: Nunito, under the SIL Open Font License (`Nunito-OFL.txt`)
 - `site/CNAME`: the custom domain
 
-The logo paths in the pages come from the BiteCode brand SVGs; edit the SVG source and paste the new path data in rather than redrawing them.
+The paths in `logo.svg` and `favicon.svg` come from the BiteCode brand SVGs; replace them with new path data from the brand files rather than redrawing them.
