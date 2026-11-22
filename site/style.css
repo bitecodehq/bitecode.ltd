@@ -221,6 +221,70 @@ a:hover {
   fill: currentColor;
 }
 
+.bite-whole,
+.bite-tooth {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bite-whole {
+    display: inline;
+    animation: bite-swap 0s linear 1.15s forwards;
+  }
+
+  .bite-tooth {
+    display: inline;
+    fill: var(--background);
+    stroke: var(--background);
+    stroke-width: 0.75;
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: 0 0;
+    animation: bite 0.16s cubic-bezier(0.2, 0.9, 0.3, 1.25) forwards;
+  }
+
+  .bite-tooth:nth-of-type(2) {
+    animation-delay: 0.5s;
+  }
+
+  .bite-tooth:nth-of-type(3) {
+    animation-delay: 0.72s;
+  }
+
+  .bite-tooth:nth-of-type(4) {
+    animation-delay: 0.94s;
+  }
+
+  .bite-final {
+    opacity: 0;
+    animation: bite-reveal 0s linear 1.15s forwards;
+  }
+}
+
+@keyframes bite {
+  from {
+    opacity: 1;
+    transform: scale(0.2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bite-swap {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes bite-reveal {
+  to {
+    opacity: 1;
+  }
+}
+
 .site-navigation {
   display: none;
 }
@@ -375,9 +439,9 @@ span.project-link {
 }
 
 .project-plotpals {
-  --project-muted: #0b3f63;
-  background: #ff6b4a;
-  color: #04233a;
+  --project-muted: #a9c7b4;
+  background: #1d4d3a;
+  color: #f1f7ee;
 }
 
 @media (min-width: 900px) {
